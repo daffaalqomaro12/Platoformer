@@ -1,16 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMrnu : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    public void playGame(){
+        SceneManager.LoadScene("Game");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void quitGame(){
+        Application.Quit();
+        Debug.Log("QUIT!!");
     }
+
 }
